@@ -1,0 +1,142 @@
+# 竹智熊猫
+
+> Modern, responsive, batteries-included Hugo theme for creating beautiful static websites.
+
+
+## computer_science
+
+### windows
+- [VHDX](https://te3030.github.io/docs-computer-science/win/vhdx/): 虚拟磁盘文件 - Published 2025-06-18
+- [Windows 包管理器](https://te3030.github.io/docs-computer-science/win/win_packages/): Windows 上的命令行包管理器种类繁多，各自针对不同的开发需求和应用场景：
+Chocolatey 和 winget 适合常规软件管理。 Scoop 更适合开发工具和小型应用。 Conda、NPM  … - Published 2025-05-23
+- [Windows Bat命令](https://te3030.github.io/docs-computer-science/win/bat/): Bat命令 - Published 2022-09-30
+
+### gfw
+
+### Android
+
+#### Gradle
+- [Gradle换源](https://te3030.github.io/docs-computer-science/android/gradle/gradle_change_source/): gradle-wrapper.properties 换源 distributionBase=GRADLE_USER_HOME distributionPath=wrapper/dists … - Published 2026-02-02
+
+#### Redroid
+
+#### ADB
+- [Android ADB 命令](https://te3030.github.io/docs-computer-science/android/adb/adb/): 获取手机的ip adb shell ip addr show wlan0 | grep &#34;inet &#34; | awk &#39;{print $2}&#39; | cut -d/ -f1 … - Published 2025-09-17
+
+### Docker
+- [Docker快速使用手册](https://te3030.github.io/docs-computer-science/docker/quick-user-manual/): docker快速使用手册，安装执行等常用命令用法 - Published 2022-09-07
+- [Docker log](https://te3030.github.io/docs-computer-science/docker/docker-log/): 限制docker log 全局限制 修改/etc/docker/daemon.json文件，添加如下内容： - Published 2025-05-23
+- [Docker load](https://te3030.github.io/docs-computer-science/docker/docker-load/): 修改docker load 的镜像名称为指定的名称 DOCKER_IMAGES_NAME=&#34;jre-alpine:17.0.10&#34; docker rm -f nps-agnet || … - Published 2025-05-23
+
+#### 软件快速安装使用
+- [Redis快速安装](https://te3030.github.io/docs-computer-science/docker/env/redis/): redis快速安装 - Published 2022-09-23
+- [Mariadb快速安装](https://te3030.github.io/docs-computer-science/docker/env/mariadb/): mariadb快速安装 - Published 2022-08-16
+- [Minio快速安装](https://te3030.github.io/docs-computer-science/docker/env/minio/): minio快速安装 - Published 2022-08-16
+
+### Golang
+- [golang打包](https://te3030.github.io/docs-computer-science/golang/golang-build/): golang打包以及相关参数调整 - Published 2022-08-19
+
+### License
+- [GPL-3.0、AGPL-3.0、LGPL-3.0 这些有什么区别](https://te3030.github.io/docs-computer-science/license/ai_generate_test/): GPL-3.0、AGPL-3.0 和 LGPL-3.0 都是 GNU 家族的“著佐权”（copyleft）开源许可证，由自由软件基金会（FSF）发布，目标都是保障用户运行、研究、修改和分发软件的自由。 … - Published 2026-01-26
+
+### Python
+- [pip 换源](https://te3030.github.io/docs-computer-science/python/python/): 临时使用 # 使用 -i 参数 pip install xxxx -i https://pypi.tuna.tsinghua.edu.cn/simple 修改用户目录配置 Linux : …
+
+### Linux
+- [Screen](https://te3030.github.io/docs-computer-science/linux/screen/): kill 使用screen名字，kill掉 screen -S session_name -X quit 激活screen： screen -r session_name exit # 利用exit退 … - Published 2025-05-23
+- [Linux系统信息查询全攻略](https://te3030.github.io/docs-computer-science/linux/linux%E7%B3%BB%E7%BB%9F%E4%BF%A1%E6%81%AF%E6%9F%A5%E8%AF%A2%E5%85%A8%E6%94%BB%E7%95%A5/): 🖥️ 一、操作系统基本信息 命令 作用 uname -a 显示内核版本、主机名、架构等综合信息 cat /proc/version 查看内核版本及编译信息（含 GCC 版本） cat … - Published 2025-05-23
+- [包管理器、系统镜像配置代理](https://te3030.github.io/docs-computer-science/linux/thanks-mirror/): 整理记录各个包管理器，系统镜像，以及常用软件的好用镜像 - Published 2022-10-08
+- [包管理器代理设置](https://te3030.github.io/docs-computer-science/linux/package-manager-proxy-settings/): 包管理器代理设置 - Published 2022-10-08
+- [PWA 支持](https://te3030.github.io/docs-computer-science/linux/pwa-support/): 了解如何在 DoIt 主题中配置渐进式网络应用程序 (PWA). - Published 2021-05-10
+
+#### NFS
+- [如何启用NFS相关的调试日志记录](https://te3030.github.io/docs-computer-science/linux/nfs/%E5%A6%82%E4%BD%95%E5%90%AF%E7%94%A8nfs%E7%9B%B8%E5%85%B3%E7%9A%84%E8%B0%83%E8%AF%95%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95/): 如何启用NFS相关的调试日志记录 https://blog.csdn.net/QTM_Gitee/article/details/143935475 场景 NFS服务器或NFS客户端不能正常工作。日志 … - Published 2025-09-17
+
+#### GitHub
+- [GoLang实现基于本地文件的海量数据存储和读取](https://te3030.github.io/docs-computer-science/linux/github/msearch/): 基于 MMAP(Memory mapping)技术，将硬盘映射到内存，轻松映射超过 100G 硬盘空间至内存（不影响实际内存占用），相当于无限内存。 - Published 2022-10-10
+
+#### Shell
+- [Shell 字符串](https://te3030.github.io/docs-computer-science/linux/shell/shell_char/): shell - Published 2025-05-23
+
+## 参考资料与工具
+
+### Hugo 配置 GitHub Actions 实现自动化 GitHub Pages
+
+## 常识与通识知识
+
+## 工程与应用技术
+
+## 科学类
+
+## 历史类
+
+## 人文类
+
+## 社会科学
+
+## 医学与健康
+
+## Blog
+
+## 介绍
+- [关于](https://te3030.github.io/docs-hextra/content/about/): Hextra 是一款专为构建现代化静态网站而设计的简洁、快速且灵活的主题。它尤其适合搭建文档类网站，同时也能轻松驾驭博客、作品集等多种站点类型。
+与 Jekyll 类似，Hugo 同样是一款静态网站生 …
+- [项目展示](https://te3030.github.io/docs-hextra/content/showcase/): 由 Hextra 驱动的开源网站和项目。 Beginner Privacy AXIVO Docs Stanford CS 40 Helix Docs Clever Cloud …
+
+### 博客
+- [Markdown 语法指南](https://te3030.github.io/docs-hextra/content/blog/markdown/): 本文展示了 Hugo 内容文件中可用的基础 Markdown 语法示例。 - Published 2020-01-01
+
+### 简介
+- [快速开始](https://te3030.github.io/docs-hextra/content/docs/getting-started/): 从模板快速启动 imfing/hextra-starter-template
+
+#### 指南
+- [文件组织](https://te3030.github.io/docs-hextra/content/docs/guide/organize-files/): 目录结构 默认情况下，Hugo 会在 content 目录中查找 Markdown 文件，目录的结构决定了网站最终的输出结构。 以本网站为例：
+- [Markdown](https://te3030.github.io/docs-hextra/content/docs/guide/markdown/): Hugo 支持使用 Markdown 语法来格式化文本、创建列表等。本页将展示一些最常用的 Markdown 语法示例。
+- [配置](https://te3030.github.io/docs-hextra/content/docs/guide/configuration/): Hugo 从站点根目录的 hugo.yaml 读取配置。 配置文件可用来调整站点的所有方面。 查看本网站的示例配置文件 docs/hugo.yaml 以全面了解可用设置和最佳实践。
+- [语法高亮](https://te3030.github.io/docs-hextra/content/docs/guide/syntax-highlighting/): Hugo 使用纯 Go 编写的通用语法高亮工具 Chroma 来实现代码高亮。建议在 Markdown 内容中使用反引号标记代码块，例如：
+- [数学公式](https://te3030.github.io/docs-hextra/content/docs/guide/latex/): LaTeX 数学表达式默认使用 KaTeX\KaTeXKATE​X 渲染。直接在 Markdown 内容中使用即可，无需手动配置。
+使用方法 LaTeX 既可用于行内表达式，也可用于大段文本。
+- [图表](https://te3030.github.io/docs-hextra/content/docs/guide/diagrams/): 目前，Hextra 支持通过 Mermaid 绘制图表。
+- [部署站点](https://te3030.github.io/docs-hextra/content/docs/guide/deploy-site/): Hugo 生成静态网站，支持灵活的托管方案。 本页提供在各类平台上部署 Hextra 站点的指南。
+
+##### 短代码
+- [Asciinema Player 组件](https://te3030.github.io/docs-hextra/content/docs/guide/shortcodes/asciinema/): asciinema shortcode 允许你在 Hugo 站点中嵌入使用 asciinema 创建的终端录制。它提供了一个功能丰富的终端播放器，具有播放控制、速度调整和主题自定义等功能。
+- [Hextra Shortcodes](https://te3030.github.io/docs-hextra/content/docs/guide/shortcodes/hextra/): 这些短代码的主要用途是在布局hextra-home内。
+hextra/feature-card 显示功能卡的短代码。
+Usage {{&lt; hextra/feature-card …
+- [Jupyter Notebook 组件](https://te3030.github.io/docs-hextra/content/docs/guide/shortcodes/jupyter/): 实验性功能：通过短代码嵌入 Jupyter Notebook。注意并非所有单元格类型都受支持。 Jupyter Notebook 是 Project Jupyter 推出的语言无关的 HTML 笔记 …
+- [标签页](https://te3030.github.io/docs-hextra/content/docs/guide/shortcodes/tabs/): 示例 macOSLinuxWindows macOS: 苹果公司开发的桌面操作系统。Linux: 一款开源操作系统。Windows: 微软公司开发的桌面操作系统。 使用方法 默认 {{&lt; …
+- [步骤](https://te3030.github.io/docs-hextra/content/docs/guide/shortcodes/steps/): 一个内置组件，用于显示一系列步骤。
+示例 第一步 这是第一步。
+第二步 这是第二步。
+- [卡片组件](https://te3030.github.io/docs-hextra/content/docs/guide/shortcodes/cards/): 示例 提示框 带标签的卡片 自定义标签 无图标 图片卡片网络图片 本地图片静态目录下的原始图片。 本地图片资源目录下的图片，经过Hugo处理。 使用方法 {{&lt; cards &gt;}} …
+- [其他短代码](https://te3030.github.io/docs-hextra/content/docs/guide/shortcodes/others/): 其中部分为Hugo内置短代码。 这些短代码稳定性较低，可能随时变更。 示例 default border color link icon
+- [提示框组件](https://te3030.github.io/docs-hextra/content/docs/guide/shortcodes/callout/): 一个内置组件，用于向读者展示重要信息。
+- [图标](https://te3030.github.io/docs-hextra/content/docs/guide/shortcodes/icon/): 要在行内使用此短代码，需在配置中启用行内短代码功能：
+hugo.yamlenableInlineShortcodes: true 可用图标列表可在 data/icons.yaml 中找到。
+- [文件树组件](https://te3030.github.io/docs-hextra/content/docs/guide/shortcodes/filetree/): 示例 content _index.md docs _index.md introduction.md introduction.fr.md hugo.toml 使用方法 Markdown{{&lt; …
+- [详情](https://te3030.github.io/docs-hextra/content/docs/guide/shortcodes/details/): 一个内置组件，用于显示可折叠的内容。
+
+#### 高级主题
+- [多语言支持](https://te3030.github.io/docs-hextra/content/docs/advanced/multi-language/): Hextra 支持使用 Hugo 的多语言模式 创建多语言网站。
+- [评论系统](https://te3030.github.io/docs-hextra/content/docs/advanced/comments/): Hextra 支持为您的网站添加评论系统。 目前支持 giscus 。
+- [自定义 Hextra](https://te3030.github.io/docs-hextra/content/docs/advanced/customization/): Hextra 在 hugo.yaml 配置文件中提供了一些默认的自定义选项来配置主题。 本页描述了可用选项以及如何进一步自定义主题。
+
+## Hextra 主题
+
+### Hextra 主题
+
+### Hextra 主题
+
+## Hextra 主题
+
+### Hextra 主题
+
+### Hextra 主题
+
+### 系列
+
+
+---
+Generated on 2026-02-03 09:33:59 UTC
+Site: https://te3030.github.io/
