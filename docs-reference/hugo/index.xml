@@ -1,0 +1,19 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>竹智熊猫 – Hugo 配置 GitHub Actions 实现自动化 GitHub Pages</title>
+    <link>https://te3030.github.io/docs-reference/hugo/</link>
+    <description>Recent content in Hugo 配置 GitHub Actions 实现自动化 GitHub Pages on 竹智熊猫</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 03 Feb 2026 14:36:00 +0800</lastBuildDate>
+    
+	  <atom:link href="https://te3030.github.io/docs-reference/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>
