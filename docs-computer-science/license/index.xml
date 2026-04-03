@@ -1,0 +1,226 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>竹智熊猫 – License</title>
+    <link>https://te3030.github.io/docs-computer-science/license/</link>
+    <description>Recent content in License on 竹智熊猫</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 23 May 2025 11:20:56 +0800</lastBuildDate>
+    
+	  <atom:link href="https://te3030.github.io/docs-computer-science/license/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>GPL-3.0、AGPL-3.0、LGPL-3.0 这些有什么区别</title>
+      <link>https://te3030.github.io/docs-computer-science/license/ai_generate_test/</link>
+      <pubDate>Mon, 26 Jan 2026 15:30:00 +0800</pubDate>
+      
+      <guid>https://te3030.github.io/docs-computer-science/license/ai_generate_test/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-green-200 hx:bg-green-100 hx:text-green-900 hx:dark:border-green-200/30 hx:dark:bg-green-900/30 hx:dark:text-green-200&#34;&gt;
+  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;div class=&#34;hx:select-none hx:text-xl&#34; style=&#34;font-family: &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;;&#34;&gt;🤖&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
+    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;本文由 Qwen3-Max 生成&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;GPL-3.0、AGPL-3.0 和 LGPL-3.0 都是 &lt;strong&gt;GNU 家族的“著佐权”（copyleft）开源许可证&lt;/strong&gt;，由自由软件基金会（FSF）发布，目标都是保障用户运行、研究、修改和分发软件的自由。但它们在&lt;strong&gt;开源义务的范围和强度&lt;/strong&gt;上有显著区别。&lt;/p&gt;
+&lt;p&gt;下面从核心差异、使用场景、商业影响等角度为你清晰对比：&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;✅ 一句话总结区别&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;-一句话总结区别&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-%e4%b8%80%e5%8f%a5%e8%af%9d%e6%80%bb%e7%bb%93%e5%8c%ba%e5%88%ab&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;此章节的永久链接&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;协议&lt;/th&gt;
+          &lt;th&gt;核心特点&lt;/th&gt;
+          &lt;th&gt;开源“传染”范围&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;GPL-3.0&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;经典强著佐权&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;整个衍生作品必须开源&lt;/strong&gt;（只要分发二进制）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;AGPL-3.0&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;GPL + &lt;strong&gt;网络服务触发开源&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;只要通过网络提供服务，就必须开源&lt;/strong&gt;（即使不分发软件）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;LGPL-3.0&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;弱著佐权，专为库设计&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;仅库本身需开源，调用程序可闭源&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2&gt;🔍 详细对比&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;-详细对比&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-%e8%af%a6%e7%bb%86%e5%af%b9%e6%af%94&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;此章节的永久链接&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;1. &lt;strong&gt;GPL-3.0（GNU General Public License v3）&lt;/strong&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;1-gpl-30gnu-general-public-license-v3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-gpl-30gnu-general-public-license-v3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;此章节的永久链接&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：通用软件（如编译器、命令行工具、桌面应用）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心规则&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;如果你&lt;strong&gt;分发&lt;/strong&gt;（distribution）基于 GPL-3.0 的软件（包括修改版），&lt;strong&gt;必须公开整个项目的完整源代码&lt;/strong&gt;，并以 GPL-3.0 发布。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;内部使用或 SaaS 不分发？→ 无需开源&lt;/strong&gt;（这是关键漏洞）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;商业影响&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;❌ 不能将 GPL 代码集成到闭源商业软件中（除非不对外分发）；&lt;/li&gt;
+&lt;li&gt;✅ 可用于内部系统、SaaS（只要不把软件“分发”给客户）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;📌 例子：你用 GPL 软件搭建一个 Web 服务，用户只通过浏览器访问 → &lt;strong&gt;不需要开源你的代码&lt;/strong&gt;（因为没“分发”软件副本）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3&gt;2. &lt;strong&gt;AGPL-3.0（GNU Affero General Public License v3）&lt;/strong&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;2-agpl-30gnu-affero-general-public-license-v3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-agpl-30gnu-affero-general-public-license-v3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;此章节的永久链接&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：&lt;strong&gt;网络应用 / SaaS / 云服务&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心规则&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;在 GPL-3.0 基础上，&lt;strong&gt;新增第13条&lt;/strong&gt;：
+&lt;blockquote&gt;
+  &lt;p&gt;“如果你通过网络让用户与软件交互（如 Web 服务），即使没有分发软件，也必须向用户提供源代码。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;这堵住了 GPL 在 SaaS 场景下的“漏洞”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;商业影响&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;❌ &lt;strong&gt;任何基于 AGPL 的 SaaS 服务都必须开源&lt;/strong&gt;；&lt;/li&gt;
+&lt;li&gt;❌ 几乎无法用于闭源商业产品（除非完全隔离，如通过 API 且不衍生）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;📌 例子：你修改了 AGPL 的 Nextcloud 并部署成网盘服务 → &lt;strong&gt;必须向所有用户提供你修改后的完整源码&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3&gt;3. &lt;strong&gt;LGPL-3.0（GNU Lesser General Public License v3）&lt;/strong&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;3-lgpl-30gnu-lesser-general-public-license-v3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-lgpl-30gnu-lesser-general-public-license-v3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;此章节的永久链接&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：&lt;strong&gt;共享库（.so/.dll/.jar 等）&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心规则&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;仅对库本身有 copyleft 要求&lt;/strong&gt;；&lt;/li&gt;
+&lt;li&gt;如果你的程序&lt;strong&gt;动态链接&lt;/strong&gt;（dynamic linking）LGPL 库，&lt;strong&gt;主程序可以闭源、商用、任意许可证&lt;/strong&gt;；&lt;/li&gt;
+&lt;li&gt;如果&lt;strong&gt;静态链接&lt;/strong&gt;或&lt;strong&gt;修改了库代码&lt;/strong&gt;，则修改后的库必须以 LGPL 开源。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;商业影响&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;✅ &lt;strong&gt;非常适合商业软件集成开源库&lt;/strong&gt;（如 Qt、GTK+）；&lt;/li&gt;
+&lt;li&gt;开发者只需开放对 LGPL 库本身的修改，业务逻辑可保密。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;📌 例子：你在闭源 App 中调用 LGPL 的 FFmpeg 解码视频 → &lt;strong&gt;合法！只需说明用了 FFmpeg 并提供其 LGPL 源码链接&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2&gt;📊 对比表：关键维度&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;-对比表关键维度&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-%e5%af%b9%e6%af%94%e8%a1%a8%e5%85%b3%e9%94%ae%e7%bb%b4%e5%ba%a6&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;此章节的永久链接&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;特性&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;GPL-3.0&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;AGPL-3.0&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;LGPL-3.0&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;是否允许闭源衍生作品？&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;❌ 否&lt;/td&gt;
+          &lt;td&gt;❌ 否&lt;/td&gt;
+          &lt;td&gt;✅ 是（主程序可闭源）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;SaaS/网络服务是否触发开源？&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;❌ 否&lt;/td&gt;
+          &lt;td&gt;✅ 是&lt;/td&gt;
+          &lt;td&gt;⚠️ 仅当修改/分发库本身&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;适合做库（library）吗？&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;❌ 不推荐&lt;/td&gt;
+          &lt;td&gt;❌ 不推荐&lt;/td&gt;
+          &lt;td&gt;✅ &lt;strong&gt;专门为此设计&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;商业友好度&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;低&lt;/td&gt;
+          &lt;td&gt;极低&lt;/td&gt;
+          &lt;td&gt;中高&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;典型项目&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Bash, GIMP, GCC&lt;/td&gt;
+          &lt;td&gt;MongoDB（旧版）、Nextcloud、Odoo&lt;/td&gt;
+          &lt;td&gt;FFmpeg, GTK+, Qt（可选）&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2&gt;💡 如何选择？&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;-如何选择&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-%e5%a6%82%e4%bd%95%e9%80%89%e6%8b%a9&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;此章节的永久链接&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;你的目标&lt;/th&gt;
+          &lt;th&gt;推荐协议&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;希望所有衍生作品&lt;strong&gt;必须开源&lt;/strong&gt;（坚定自由软件理念）&lt;/td&gt;
+          &lt;td&gt;✅ &lt;strong&gt;GPL-3.0&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;开发 &lt;strong&gt;SaaS/云服务&lt;/strong&gt;，且希望&lt;strong&gt;强制用户获得源码&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;✅ &lt;strong&gt;AGPL-3.0&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;发布一个&lt;strong&gt;库&lt;/strong&gt;，希望被&lt;strong&gt;商业软件广泛采用&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;✅ &lt;strong&gt;LGPL-3.0&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;完全不想限制使用者（包括闭源商用）&lt;/td&gt;
+          &lt;td&gt;❌ 别选这三个 → 改用 &lt;strong&gt;MIT/Apache-2.0&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2&gt;⚠️ 重要提醒&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;-重要提醒&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-%e9%87%8d%e8%a6%81%e6%8f%90%e9%86%92&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;此章节的永久链接&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AGPL 的“网络交互”定义较宽&lt;/strong&gt;：即使只是提供 API 服务，也可能被认定为“远程网络交互”，从而触发开源义务。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GPL/LGPL 的“衍生作品”判断复杂&lt;/strong&gt;：如果代码深度耦合（如直接嵌入、静态链接），可能被认定为整体作品，导致整个项目需开源。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;三者之间兼容性&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;AGPL-3.0 与 GPL-3.0 &lt;strong&gt;可通过第13条互操作&lt;/strong&gt;；&lt;/li&gt;
+&lt;li&gt;LGPL-3.0 可被“升级”为 GPL-3.0 使用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;✅ 总结&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;-总结&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-%e6%80%bb%e7%bb%93&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;此章节的永久链接&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GPL-3.0&lt;/strong&gt;：传统强开源，防闭源分发；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AGPL-3.0&lt;/strong&gt;：GPL 的“云时代升级版”，防 SaaS 闭源；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LGPL-3.0&lt;/strong&gt;：为库设计的“温和版”，鼓励商业采用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;选择哪个，取决于你&lt;strong&gt;想在多大程度上强制他人开源&lt;/strong&gt;，以及你的项目是&lt;strong&gt;应用、服务还是库&lt;/strong&gt;。&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
